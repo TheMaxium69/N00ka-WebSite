@@ -7,15 +7,32 @@
 
 <main>
 
-    <p><?= $env_titre ?></p>
+
+    <section id="quoi">
+
+
+        <h2>
+            C'est quoi N00ka ?
+        </h2>
+
+
+    </section>
+
+
+    <section id="qui">
+
+        <h2>
+            Qui sommes-nous ?
+        </h2>
+
+
+    </section>
+
+
+
+
 
 </main>
-
-
-<?php $js_exemple(); ?>
-
-
-
 
 
 
