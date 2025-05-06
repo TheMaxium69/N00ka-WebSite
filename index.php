@@ -3,7 +3,7 @@
 
 
 
-<header> <?php $cp_navbar(); ?> </header>
+<header> <?php $cp_header(); ?> </header>
 
 <main>
 

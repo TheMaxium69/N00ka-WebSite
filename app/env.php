@@ -29,7 +29,7 @@ $SALT = "app/salt." . $APP_ENV . ".php";
  ************************/
 
 //Variable GLOBAL
-$env_name = "TyroExemple";
+$env_name = "N00ka Studio";
 $env_logo = $SYSTEM_ASSETS . "logo.png";
 $env_url = "https://tyroexemple.fr"; /* for <meta> */
 $env_desc = "My First Site"; /* for <meta> */
@@ -41,7 +41,7 @@ $env_page = array(
     0 => "404 | " . $env_name,
     //Page
     1 => array(
-        "title" => "Accueil | " . $env_name,
+        "title" => $env_name,
         "name" => "Accueil",
         "url" => "./",
         "css" => "index.css",
