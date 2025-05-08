@@ -2,6 +2,33 @@
 
 <?php $cp_header(); ?>
 
+
+<style>
+    main {
+        background-color: white;
+        margin-top: -40px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+
+
+        /*height: 100000vh; !* TEMP *!*/
+    }
+
+
+
+    section {
+        padding: 400px 100px;
+
+
+
+    }
+
+    section#quoi{
+        padding-top: 150px;
+    }
+
+</style>
+
 <main>
 
 
@@ -9,7 +36,7 @@
 
 
         <h2>
-            C'est quoi N00ka ?
+            🍻 C'est quoi N00ka ?
         </h2>
 
 
@@ -19,7 +46,7 @@
     <section id="qui">
 
         <h2>
-            Qui sommes-nous ?
+            🍻 Qui sommes-nous ?
         </h2>
 
 
@@ -28,7 +55,7 @@
     <section id="project">
 
         <h2>
-            Nos projets ?
+            🍻 Nos projets ?
         </h2>
 
 
@@ -37,7 +64,7 @@
     <section id="partenaire">
 
         <h2>
-            Nos partenaires ?
+            🍻 Nos partenaires ?
         </h2>
 
 
