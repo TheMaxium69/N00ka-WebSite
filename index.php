@@ -39,6 +39,9 @@
             🍻 C'est quoi N00ka ?
         </h2>
 
+        <div class="undertitle"></div>
+
+        <p class="txt"></p>
 
     </section>
 
