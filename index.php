@@ -74,14 +74,30 @@
             <p class="txt">
                 Lorem ipsum dolor sit amet, incididunt irure lorem exercitation minim anim, ullamco fugiat tempor lorem deserunt nostrud commodo id. Elit excepteur dolor mollit veniam. Voluptate nisi eu sed est incididunt, laborum dolore eu laboris. Tempor mollit elit sit voluptate sunt ea, exercitation dolor deserunt esse quis. Sed adipiscing ea magna nulla, pariatur magna officia ipsum ullamco commodo ad.
             </p>
-            
+
         </div>
 
 
         <style>
+
+            section#qui{
+                display: flex;
+                flex-direction: row;
+
+                .left{
+                    width: 50%;
+
+                    .img{
+                        background-image: url("file_assets/img_1.jpg");
+                    }
+                }
+
+                .right{
+                    width: 50%;
+                }
+            }
             
-            
-            
+
         </style>
 
 
