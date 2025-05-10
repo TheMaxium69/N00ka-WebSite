@@ -17,14 +17,22 @@
 
 
     section {
-        padding: 400px 100px;
+        padding: 75px 0px;
+        max-width: 1250px;
+        margin: 0 auto;
 
 
 
     }
 
     section#quoi{
-        padding-top: 150px;
+        padding-top: 125px;
+    }
+
+    p.txt{
+        text-align: center;
+        font-size: 20px;
+        margin: 60px 80px;
     }
 
 </style>
@@ -41,16 +49,42 @@
 
         <div class="undertitle"></div>
 
-        <p class="txt"></p>
+        <p class="txt">
+            Lorem ipsum dolor sit amet, incididunt irure lorem exercitation minim anim, ullamco fugiat tempor lorem deserunt nostrud commodo id. Elit excepteur dolor mollit veniam. Voluptate nisi eu sed est incididunt, laborum dolore eu laboris. Tempor mollit elit sit voluptate sunt ea, exercitation dolor deserunt esse quis. Sed adipiscing ea magna nulla, pariatur magna officia ipsum ullamco commodo ad.
+        </p>
 
     </section>
 
 
     <section id="qui">
 
-        <h2>
-            🍻 Qui sommes-nous ?
-        </h2>
+        <div class="left">
+
+            <div class="img"></div>
+
+        </div>
+
+        <div class="right">
+            <h2>
+                🍻 Qui sommes-nous ?
+            </h2>
+
+            <div class="undertitle"></div>
+
+            <p class="txt">
+                Lorem ipsum dolor sit amet, incididunt irure lorem exercitation minim anim, ullamco fugiat tempor lorem deserunt nostrud commodo id. Elit excepteur dolor mollit veniam. Voluptate nisi eu sed est incididunt, laborum dolore eu laboris. Tempor mollit elit sit voluptate sunt ea, exercitation dolor deserunt esse quis. Sed adipiscing ea magna nulla, pariatur magna officia ipsum ullamco commodo ad.
+            </p>
+            
+        </div>
+
+
+        <style>
+            
+            
+            
+        </style>
+
+
 
 
     </section>
@@ -62,6 +96,12 @@
         </h2>
 
 
+        <div class="undertitle"></div>
+
+
+
+
+
     </section>
 
     <section id="partenaire">
@@ -69,6 +109,12 @@
         <h2>
             🍻 Nos partenaires ?
         </h2>
+
+
+        <div class="undertitle"></div>
+
+
+
 
 
     </section>
