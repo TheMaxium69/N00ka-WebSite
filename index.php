@@ -8,11 +8,13 @@
     <section id="about">
 
 
-        <h2>
+        <h2 class="titleSection">
             🍻 C'est quoi N00ka ?
         </h2>
 
-        <div class="undertitle"></div>
+        <div class="undertitle">
+            <div class="line"></div>
+        </div>
 
         <p class="txt">
             Lorem ipsum dolor sit amet, incididunt irure lorem exercitation minim anim, ullamco fugiat tempor lorem deserunt nostrud commodo id. Elit excepteur dolor mollit veniam. Voluptate nisi eu sed est incididunt, laborum dolore eu laboris. Tempor mollit elit sit voluptate sunt ea, exercitation dolor deserunt esse quis. Sed adipiscing ea magna nulla, pariatur magna officia ipsum ullamco commodo ad.
@@ -30,11 +32,13 @@
         </div>
 
         <div class="right">
-            <h2>
+            <h2 class="titleSection">
                 🍻 Qui sommes-nous ?
             </h2>
 
-            <div class="undertitle"></div>
+            <div class="undertitle">
+                <div class="line"></div>
+            </div>
 
             <p class="txt">
                 Lorem ipsum dolor sit amet, incididunt irure lorem exercitation minim anim, ullamco fugiat tempor lorem deserunt nostrud commodo id. Elit excepteur dolor mollit veniam. Voluptate nisi eu sed est incididunt, laborum dolore eu laboris. Tempor mollit elit sit voluptate sunt ea, exercitation dolor deserunt esse quis. Sed adipiscing ea magna nulla, pariatur magna officia ipsum ullamco commodo ad.
@@ -46,12 +50,14 @@
 
     <section id="project">
 
-        <h2>
+        <h2 class="titleSection">
             🍻 Nos projets ?
         </h2>
 
 
-        <div class="undertitle"></div>
+        <div class="undertitle">
+            <div class="line"></div>
+        </div>
 
 
 
@@ -61,12 +67,14 @@
 
     <section id="partenaire">
 
-        <h2>
+        <h2 class="titleSection">
             🍻 Nos partenaires ?
         </h2>
 
 
-        <div class="undertitle"></div>
+        <div class="undertitle">
+            <div class="line"></div>
+        </div>
 
         <div class="rowPartenaire">
 
@@ -74,15 +82,15 @@
                 <div class="pp" style="background-image: url('file_assets/part/Tyrolium.jpg')"></div>
             </a>
 
-            <a href="" target="_blank">
+            <a >
                 <div class="pp" style="background-image: url('file_assets/part/graph.png')"></div>
             </a>
 
-            <a href="" target="_blank">
+            <a>
                 <div class="pp" style="background-image: url('file_assets/part/label.png')"></div>
             </a>
 
-            <a href="" target="_blank">
+            <a>
                 <div class="pp" style="background-image: url('file_assets/part/1.png')"></div>
             </a>
 
