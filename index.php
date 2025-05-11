@@ -2,40 +2,10 @@
 
 <?php $cp_header(); ?>
 
-
-<style>
-    main {
-        background-color: white;
-        margin-top: -40px;
-        border-top-left-radius: 30px;
-        border-top-right-radius: 30px;
-    }
-
-    section {
-        padding: 75px 0px;
-        max-width: 1250px;
-        margin: 0 auto;
-
-
-
-    }
-
-    section#quoi{
-        padding-top: 125px;
-    }
-
-    p.txt{
-        text-align: center;
-        font-size: 20px;
-        margin: 60px 80px;
-    }
-
-</style>
-
 <main>
 
 
-    <section id="quoi">
+    <section id="about">
 
 
         <h2>
@@ -51,7 +21,7 @@
     </section>
 
 
-    <section id="qui">
+    <section id="owner">
 
         <div class="left">
 
@@ -71,41 +41,7 @@
             </p>
 
         </div>
-
-
-        <style>
-
-            section#qui{
-                display: flex;
-                flex-direction: row;
-
-                .left{
-                    width: 50%;
-
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                    img{
-                        height: 100%;
-                        margin: auto;
-                        border-radius: 22px;
-                        max-width: 100%;
-                        object-fit: contain;
-                    }
-                }
-
-                .right{
-                    width: 50%;
-                }
-            }
-            
-
-        </style>
-
-
-
-
+        
     </section>
 
     <section id="project">
