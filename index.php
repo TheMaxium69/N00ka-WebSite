@@ -9,12 +9,7 @@
         margin-top: -40px;
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
-
-
-        /*height: 100000vh; !* TEMP *!*/
     }
-
-
 
     section {
         padding: 75px 0px;
@@ -60,7 +55,7 @@
 
         <div class="left">
 
-            <div class="img"></div>
+            <img src="file_assets/people.png" class="img" alt="owner n00ka">
 
         </div>
 
@@ -87,8 +82,16 @@
                 .left{
                     width: 50%;
 
-                    .img{
-                        background-image: url("file_assets/img_1.jpg");
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img{
+                        height: 100%;
+                        margin: auto;
+                        border-radius: 22px;
+                        max-width: 100%;
+                        object-fit: contain;
                     }
                 }
 
