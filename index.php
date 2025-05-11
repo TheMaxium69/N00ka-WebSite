@@ -41,7 +41,7 @@
             </p>
 
         </div>
-        
+
     </section>
 
     <section id="project">
@@ -68,7 +68,25 @@
 
         <div class="undertitle"></div>
 
+        <div class="rowPartenaire">
 
+            <a href="https://tyrolium.fr/" target="_blank">
+                <div class="pp" style="background-image: url('file_assets/part/Tyrolium.jpg')"></div>
+            </a>
+
+            <a href="" target="_blank">
+                <div class="pp" style="background-image: url('file_assets/part/graph.png')"></div>
+            </a>
+
+            <a href="" target="_blank">
+                <div class="pp" style="background-image: url('file_assets/part/label.png')"></div>
+            </a>
+
+            <a href="" target="_blank">
+                <div class="pp" style="background-image: url('file_assets/part/1.png')"></div>
+            </a>
+
+        </div>
 
 
 
