@@ -82,15 +82,15 @@
                 <div class="pp" style="background-image: url('file_assets/part/Tyrolium.jpg')"></div>
             </a>
 
-            <a >
+            <a href="https://www.instagram.com/maewanm/" target="_blank">
                 <div class="pp" style="background-image: url('file_assets/part/graph.png')"></div>
             </a>
 
-            <a>
+            <a href="https://linktr.ee/hystenchurch" target="_blank">
                 <div class="pp" style="background-image: url('file_assets/part/label.png')"></div>
             </a>
 
-            <a>
+            <a href="https://www.3idfx.fr/" target="_blank">
                 <div class="pp" style="background-image: url('file_assets/part/1.png')"></div>
             </a>
 
