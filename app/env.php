@@ -47,6 +47,12 @@ $env_page = array(
         "css" => "index.css",
     ),
     2 => array(
+        "title" => "Contact | " . $env_name,
+        "name" => "contact",
+        "url" => "./contact.php",
+        "css" => "contact.css",
+    ),
+    3 => array(
         "title" => "Terms | " . $env_name,
         "name" => "Terms",
         "url" => "./terms.php",

@@ -1,7 +1,14 @@
-<?php $page_id = 2; require "@tyrositeframework/start.php"; ?>
+<?php $page_id = 3; require "@tyrositeframework/start.php"; ?>
 
 
-<h1>Terms</h1>
+<?php $cp_navbar(); ?>
+
+    <main>
+
+        <h1>Terms</h1>
+
+    </main>
+
 
 
 <?php $cp_footer(); ?>

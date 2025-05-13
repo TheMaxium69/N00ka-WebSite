@@ -1,5 +1,6 @@
 <?php $page_id = 1; require "@tyrositeframework/start.php"; ?>
 
+<?php $cp_navbar(); ?>
 <?php $cp_header(); ?>
 
 <main>
@@ -17,7 +18,7 @@
         </div>
 
         <p class="txt">
-            Lorem ipsum dolor sit amet, incididunt irure lorem exercitation minim anim, ullamco fugiat tempor lorem deserunt nostrud commodo id. Elit excepteur dolor mollit veniam. Voluptate nisi eu sed est incididunt, laborum dolore eu laboris. Tempor mollit elit sit voluptate sunt ea, exercitation dolor deserunt esse quis. Sed adipiscing ea magna nulla, pariatur magna officia ipsum ullamco commodo ad.
+            Entrez dans un univers unique où stratégie, fun et créativité se rencontrent !C'est un jeu de cartes à jouer et à collectionner, où chaque partie est différente et chaque deck reflète votre style. Créez vos propres cartes, intégrez-les aux boosters de la saison et devenez acteur de l’univers !Que vous soyez duelliste, en équipe, ou en mode chaos , le jeu s’adapte à toutes les envies !Préparez-vous à rire, rager et réagir dans un monde truffé de mèmes, de références cultes et de clins d’œil pop-culture.Tout est ici. Un univers qui n’attend que vous.
         </p>
 
     </section>
@@ -41,7 +42,9 @@
             </div>
 
             <p class="txt">
-                Lorem ipsum dolor sit amet, incididunt irure lorem exercitation minim anim, ullamco fugiat tempor lorem deserunt nostrud commodo id. Elit excepteur dolor mollit veniam. Voluptate nisi eu sed est incididunt, laborum dolore eu laboris. Tempor mollit elit sit voluptate sunt ea, exercitation dolor deserunt esse quis. Sed adipiscing ea magna nulla, pariatur magna officia ipsum ullamco commodo ad.
+                Bien sûr ! Voici un paragraphe clair et accrocheur pour présenter les créateurs et leur vision :
+                Derrière ce jeu, deux passionnés : Marthelot Maëwan et Jonathan Cornuel.
+                Animés par l’envie de rassembler les univers, les références, les délires et la culture geek/pop, ils ont imaginé un jeu où chacun peut exprimer sa vision, son humour et sa créativité. Leur objectif ? Créer bien plus qu’un simple jeu de cartes : une marque, un monde vivant et évolutif, où la communauté a toute sa place. Un espace où tout le monde peut contribuer, s’amuser et se reconnaître.
             </p>
 
         </div>
@@ -110,9 +113,9 @@
 
 </main>
 
+
 <?php $cp_footer(); ?>
-
-
+<?php $js_navbar(); ?>
 
 
 <?php require "@tyrositeframework/end.php"; ?>
