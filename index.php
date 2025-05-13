@@ -67,9 +67,73 @@
 
             <article class="project">
 
+                <div class="left">
+                </div>
+
+                <div class="right">
+                    <img src="file_assets/project/sb.png" class="img" alt="saintbalais">
+                </div>
+
             </article>
 
         </div>
+
+        <style>
+
+            section#project{
+
+                .rowProject{
+
+                    margin-top: 40px;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+
+                    article.project{
+                        background-color: red;
+
+                        margin: 20px 0;
+                        width: 100%;
+                        height: 150px;
+                        border-radius: 20px;
+                        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px, rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+                        display: flex;
+
+                        .left{
+                            width: 50%;
+                            height: 100%;
+
+
+                        }
+
+
+                        .right{
+                            width: 50%;
+                            height: 100%;
+
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: contain;
+                            }
+                        }
+
+
+
+
+
+                    }
+                }
+
+
+
+            }
+
+
+
+
+        </style>
 
 
 
