@@ -68,6 +68,14 @@
             <article class="project">
 
                 <div class="left">
+                    <h2>
+                        Saint Balais
+                    </h2>
+
+                    <p>Projet de jeux de carte</p>
+
+                    <button>Boutique</button>
+
                 </div>
 
                 <div class="right">
@@ -91,7 +99,7 @@
                     justify-content: center;
 
                     article.project{
-                        background-color: red;
+                        background-color: #ffcfa8;
 
                         margin: 20px 0;
                         width: 100%;
