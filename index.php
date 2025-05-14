@@ -74,7 +74,7 @@
 
                     <p>Projet de jeux de carte</p>
 
-                    <button>Boutique</button>
+                    <button  onclick="window.location.href = 'https://leshopsaintbalais.com/'">Boutique</button>
 
                 </div>
 
@@ -99,7 +99,8 @@
                     justify-content: center;
 
                     article.project{
-                        background-color: #ffcfa8;
+                        color: white;
+                        background-color: #523d28;
 
                         margin: 20px 0;
                         width: 100%;
@@ -111,9 +112,34 @@
                         .left{
                             width: 50%;
                             height: 100%;
-
-
                             text-align: center;
+
+                            h2{
+                               margin-top: 13px;
+                            }
+
+                            p{
+                                margin-bottom: 13px;
+                            }
+
+                            button{
+                                background-color: #ffffff;
+                                color: black;
+                                padding: 5px 10px;
+                                border: none;
+                                border-radius: 5px;
+                                cursor: pointer;
+                                font-size: 16px;
+                                transition:all .25s;
+                                text-decoration: none;
+
+                            }
+
+                            button:hover{
+                                text-decoration:none;
+                                transform:scale(1.1);
+                                -webkit-transform:scale(1.1);
+                            }
 
                         }
 
@@ -123,9 +149,11 @@
                             height: 100%;
 
                             img{
+
                                 width: 100%;
                                 height: 100%;
                                 object-fit: contain;
+                                filter: invert(1);
                             }
                         }
 

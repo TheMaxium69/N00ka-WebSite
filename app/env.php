@@ -30,9 +30,9 @@ $SALT = "app/salt." . $APP_ENV . ".php";
 
 //Variable GLOBAL
 $env_name = "N00ka Studio";
-$env_logo = $SYSTEM_ASSETS . "logo.png";
-$env_url = "https://tyroexemple.fr"; /* for <meta> */
-$env_desc = "My First Site"; /* for <meta> */
+$env_logo = $SYSTEM_ASSETS . "nooka logo.png";
+$env_url = "https://n00ka-studio.fr"; /* for <meta> */
+$env_desc = "Site Officiel de N00ka"; /* for <meta> */
 $env_lang = "fr"; /* for <html lang=""> */
 
 // PAGE MANAGEMENT
