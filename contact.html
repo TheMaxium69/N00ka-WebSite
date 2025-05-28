@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - N00ka Studio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #EDE7E0; /* Carton très clair, moins jaune */
+      color: #5C5048; /* Brun foncé neutre pour le texte principal */
+      font-size: 1rem;
+      overflow-x: hidden;
+    }
+    .paper-bg {
+      background-color: #EDE7E0;
+    }
+
+    .paper-card {
+      background-color: #D8C8B8; /* Carton clair-moyen, moins jaune */
+      border: 1px dashed #887868; /* Bordure brun neutre moyen */
+      box-shadow: 5px 5px 0px #887868; /* Ombre brun neutre moyen */
+      border-radius: 8px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .paper-card:hover {
+      transform: translate(2px, 2px);
+      box-shadow: 3px 3px 0px #786858; /* Ombre un peu plus foncée neutre au survol */
+    }
+
+    .section-title-base {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      color: #6A5040; /* Brun riche neutre pour les titres */
+      margin-bottom: 1rem;
+      text-align: center;
+      text-shadow: 1px 1px 0px #EDE7E0, 2px 2px 0px #A89888; /* Ombre texte avec couleurs carton neutre */
+    }
+    .section-subtitle-line {
+      width: 100px;
+      height: 4px;
+      background: repeating-linear-gradient(
+              45deg,
+              #C0B0A0, /* Carton moyen neutre */
+              #C0B0A0 8px,
+              #A89888 8px, /* Carton plus foncé neutre */
+              #A89888 16px
+      );
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0;
+      margin-bottom: 2rem;
+      border-radius: 2px;
+      box-shadow: 1px 1px 0px #887868; /* Ombre brun neutre moyen */
+    }
+
+    @media (min-width: 640px) {
+      .section-subtitle-line {
+        margin-bottom: 2.5rem;
+      }
+    }
+
+    .btn-primary {
+      font-family: 'Poppins', sans-serif;
+      background-color: #B8A898; /* Carton moyen neutre pour fond de bouton */
+      color: #4A4038; /* Texte brun très foncé neutre sur bouton */
+      padding: 0.60rem 1.2rem;
+      border-radius: 6px;
+      font-weight: 600;
+      border: 2px solid #6A5040; /* Bordure brun riche neutre */
+      box-shadow: 3px 3px 0px #6A5040; /* Ombre brun riche neutre */
+      transition: all 0.2s ease;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 0.90rem;
+    }
+    .btn-primary:hover {
+      background-color: #A89888; /* Carton plus foncé neutre au survol */
+      box-shadow: 1px 1px 0px #6A5040;
+      transform: translate(2px, 2px);
+    }
+    .btn-primary i {
+      transition: transform 0.3s ease;
+    }
+    .btn-primary:hover i {
+      transform: rotate(5deg) translateX(3px);
+    }
+
+    nav.paper-nav {
+      background-color: #D8C8B8; /* Carton clair-moyen neutre pour la navbar */
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+      border-bottom: 3px dashed #887868; /* Bordure brun neutre moyen */
+    }
+    nav.paper-nav img {
+      filter: drop-shadow(2px 2px 1px #887868);
+    }
+
+    /* Styles pour le formulaire de contact */
+    .form-input, .form-textarea {
+      font-family: 'Poppins', sans-serif;
+      background-color: #EDE7E0; /* Fond carton très clair pour les champs */
+      border: 1px dashed #A89888; /* Bordure pointillée carton moyen */
+      border-radius: 6px;
+      padding: 0.75rem;
+      color: #5C5048; /* Texte brun foncé */
+      width: 100%;
+      box-shadow: inset 2px 2px 3px rgba(0,0,0,0.05);
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .form-input:focus, .form-textarea:focus {
+      outline: none;
+      border-color: #6A5040; /* Bordure brun riche au focus */
+      box-shadow: inset 2px 2px 3px rgba(0,0,0,0.05), 0 0 0 2px #B8A898; /* Effet de focus */
+    }
+    .form-label {
+      font-weight: 600;
+      color: #6A5040; /* Brun riche neutre pour les labels */
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+
+    footer.paper-footer {
+      background-color: #A89888; /* Carton plus foncé neutre pour le footer */
+      color: #EDE7E0; /* Texte carton très clair neutre */
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+      border-top: 5px solid #D8C8B8; /* Bordure carton carte neutre */
+      box-shadow: inset 0 10px 10px -10px #00000020;
+    }
+    footer.paper-footer a {
+      color: #EDE7E0;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    footer.paper-footer a:hover {
+      color: #FFFFFF;
+      text-decoration: underline;
+      text-decoration-color: #EDE7E0;
+    }
+    footer.paper-footer .social-icon i {
+      transition: transform 0.3s ease;
+    }
+    footer.paper-footer .social-icon:hover i {
+      transform: scale(1.2) rotate(5deg);
+    }
+
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #EDE7E0;
+      border-left: 1px dashed #887868;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #887868;
+      border-radius: 3px;
+      border: 1px solid #6A5040;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #786858;
+    }
+
+    .section-styled-bg { /* Utilisé pour la section contact info */
+      background-color: #D0C0B0;
+      border-radius: 15px;
+      border: 2px dashed #887868;
+      box-shadow: inset 0 0 15px rgba(0,0,0,0.05);
+    }
+    .footer-title {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      color: #EDE7E0;
+    }
+    .contact-info-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      color: #5C5048;
+    }
+    .contact-info-item i {
+      color: #6A5040;
+      margin-right: 0.75rem;
+      width: 20px; /* Pour aligner les icônes */
+      text-align: center;
+    }
+  </style>
+</head>
+<body class="antialiased paper-bg">
+
+<nav class="paper-nav fixed w-full z-50">
+  <div class="container mx-auto px-4 sm:px-6 py-3 flex justify-center items-center">
+    <a href="index.html"> <img src="assets/logo.png" alt="N00ka Logo" class="h-10 sm:h-12" onerror="this.src='https://placehold.co/140x45/cccccc/333333?text=Logo';">
+    </a>
+  </div>
+</nav>
+
+<header class="bg-C0B0A0 pt-32 pb-16 text-center"> <div class="container mx-auto px-4 sm:px-6">
+  <h1 class="section-title-base text-4xl sm:text-5xl md:text-6xl">Nous Contacter</h1>
+  <p class="text-md sm:text-lg md:text-xl text-6A5040 mt-2">Une question, une suggestion ? N'hésitez pas !</p>
+</div>
+</header>
+
+<main class="container mx-auto px-4 sm:px-6 py-8 sm:py-12">
+
+  <section id="contact-form" class="py-10 md:py-16">
+    <div class="max-w-3xl mx-auto paper-card p-6 sm:p-8 md:p-10">
+      <h2 class="section-title-base text-2xl sm:text-3xl mb-6">Envoyez-nous un message</h2>
+      <form action="#" method="POST"> <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div>
+          <label for="name" class="form-label">Nom complet</label>
+          <input type="text" name="name" id="name" class="form-input" required placeholder="Votre nom et prénom">
+        </div>
+        <div>
+          <label for="email" class="form-label">Adresse e-mail</label>
+          <input type="email" name="email" id="email" class="form-input" required placeholder="votre.email@example.com">
+        </div>
+      </div>
+        <div class="mb-6">
+          <label for="subject" class="form-label">Sujet</label>
+          <input type="text" name="subject" id="subject" class="form-input" required placeholder="Sujet de votre message">
+        </div>
+        <div class="mb-8">
+          <label for="message" class="form-label">Votre message</label>
+          <textarea name="message" id="message" rows="6" class="form-textarea" required placeholder="Écrivez votre message ici..."></textarea>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn-primary text-lg px-8 py-3">
+            Envoyer le Message <i class="fas fa-paper-plane ml-2"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section id="contact-info" class="my-10 md:my-16 py-10 md:py-16 section-styled-bg">
+    <div class="container mx-auto px-4 sm:px-6">
+      <h2 class="section-title-base text-2xl sm:text-3xl mb-8">Nos Coordonnées</h2>
+      <div class="max-w-xl mx-auto paper-card p-6 sm:p-8">
+        <div class="contact-info-item">
+          <i class="fas fa-map-marker-alt fa-fw"></i>
+          <span>123 Rue du Carton, 75000 Paperville, France (Exemple)</span>
+        </div>
+        <div class="contact-info-item">
+          <i class="fas fa-phone fa-fw"></i>
+          <span>+33 1 23 45 67 89 (Exemple)</span>
+        </div>
+        <div class="contact-info-item">
+          <i class="fas fa-envelope fa-fw"></i>
+          <span>contact@n00kastudio.fr (Exemple)</span>
+        </div>
+        <div class="mt-8 pt-6 border-t border-dashed border-887868">
+          <p class="text-center text-sm text-5C5048">Suivez-nous aussi sur nos réseaux !</p>
+          <div class="flex justify-center space-x-4 mt-4">
+            <a href="https://www.instagram.com/n00ka_studio/" target="_blank" class="social-icon text-6A5040 hover:text-5C4033">
+              <i class="fab fa-instagram fa-2x"></i> </a>
+            <a href="https://www.tiktok.com/@n00ka7" target="_blank" class="social-icon text-6A5040 hover:text-5C4033">
+              <i class="fab fa-tiktok fa-2x"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/n00ka/" target="_blank" class="social-icon text-6A5040 hover:text-5C4033">
+              <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="paper-footer">
+  <div class="container mx-auto px-4 sm:px-6">
+    <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+      <div class="mb-6 md:mb-0">
+        <p class="footer-title text-lg sm:text-xl">N00ka Studio</p>
+        <p class="text-xs sm:text-sm font-medium">&copy; 2025 Tous droits réservés.</p>
+        <p class="mt-1 sm:mt-2 text-xs">Site créé par <a href="https://tyrolium.fr" target="_blank">Tyrolium</a></p>
+      </div>
+
+      <div class="flex flex-col items-center sm:flex-row sm:justify-center sm:items-baseline space-y-2 sm:space-y-0 sm:space-x-4 md:space-x-6 mb-6 md:mb-0 text-sm">
+        <a href="index.html">Accueil</a>
+        <a href="contact.html">Contact</a>
+        <a href="terms.html">Mentions Légales</a>
+      </div>
+
+      <div class="flex space-x-3 sm:space-x-4">
+        <a href="https://www.instagram.com/n00ka_studio/" target="_blank" class="social-icon">
+          <i class="fab fa-instagram fa-lg sm:fa-xl"></i> </a>
+        <a href="https://www.tiktok.com/@n00ka7" target="_blank" class="social-icon">
+          <i class="fab fa-tiktok fa-lg sm:fa-xl"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/n00ka/" target="_blank" class="social-icon">
+          <i class="fab fa-linkedin fa-lg sm:fa-xl"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.querySelector('nav.paper-nav');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      nav.style.borderBottomWidth = '2px';
+      nav.style.boxShadow = '0 2px 3px -1px rgba(0,0,0,0.05), 0 1px 2px -1px rgba(0,0,0,0.03)';
+    } else {
+      nav.style.borderBottomWidth = '3px';
+      nav.style.boxShadow = '0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06)';
+    }
+  });
+
+  const contactForm = document.querySelector('#contact-form form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(event) {
+      // event.preventDefault();
+
+    });
+  }
+
+</script>
+
+</body>
+</html>

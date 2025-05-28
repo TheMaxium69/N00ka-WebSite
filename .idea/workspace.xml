@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5b3ba227-b6cf-42a3-afff-62dd56abb6a8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/Maewan_Marthelot.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/project/sb2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/terms.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tyrogit/repo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/@tyrositeframework/docs/doc.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/@tyrositeframework/end.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/@tyrositeframework/extension.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/@tyrositeframework/function/default.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/@tyrositeframework/function/generate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/@tyrositeframework/start.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/env.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/composant/footer.phtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/composant/header.phtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/composant/meta.phtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/composant/navbar.phtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_assets/crayon.webp" beforeDir="false" afterPath="$PROJECT_DIR$/assets/crayon.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_assets/liege.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/liege.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_assets/liege2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/liege2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_assets/logo-white.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/logo-white.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_assets/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_assets/logo_old.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/logo_old.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_assets/nooka logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/nooka logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_assets/paper.avif" beforeDir="false" afterPath="$PROJECT_DIR$/assets/paper.avif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_assets/paper2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/paper2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_assets/part/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/part/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_assets/part/Tyrolium.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/part/Tyrolium.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_assets/part/graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/part/graph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_assets/part/label.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/part/label.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_assets/people.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/people.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_assets/project/sb.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/project/sb.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_assets/wood.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/wood.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_assets/wood2.webp" beforeDir="false" afterPath="$PROJECT_DIR$/assets/wood2.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_assets/wood3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/wood3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_css/all.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_css/contact.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_css/terms.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_extension/Boostrap.phtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_extension/GoogleFont.phtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_extension/remixicon.phtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_javascript/navbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_javascript/start.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/terms.php" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2wiwX43AWly29GPFzSFO8gEJrMZ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "static",
+    "last_opened_file_path": "/home/maxime/Developpement/localhost/www/N00ka-WebSite/assets/project",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "terminal",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RdControllerToolWindowsLayoutState" isNewUi="true">
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info anchor="bottom" id="Services" order="4" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/project" />
+      <recent name="$PROJECT_DIR$/assets" />
+      <recent name="$PROJECT_DIR$/file_assets" />
+      <recent name="$PROJECT_DIR$/file_assets/part" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-WS-251.25410.117" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5b3ba227-b6cf-42a3-afff-62dd56abb6a8" name="Changes" comment="" />
+      <created>1746537738431</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1746537738431</updated>
+      <workItem from="1746537740252" duration="232000" />
+      <workItem from="1746538096412" duration="2254000" />
+      <workItem from="1746642104840" duration="242000" />
+      <workItem from="1746701342005" duration="7933000" />
+      <workItem from="1746788343338" duration="18000" />
+      <workItem from="1746788447779" duration="641000" />
+      <workItem from="1746892656600" duration="3135000" />
+      <workItem from="1746972841757" duration="7278000" />
+      <workItem from="1747080605602" duration="699000" />
+      <workItem from="1747146290088" duration="3431000" />
+      <workItem from="1747226295584" duration="26000" />
+      <workItem from="1747226812851" duration="614000" />
+      <workItem from="1747240412618" duration="87000" />
+      <workItem from="1747240508305" duration="3041000" />
+      <workItem from="1747260156910" duration="1108000" />
+      <workItem from="1747261628935" duration="96000" />
+      <workItem from="1747265109461" duration="22000" />
+      <workItem from="1747265144429" duration="135000" />
+      <workItem from="1747265562337" duration="2145000" />
+      <workItem from="1747397545226" duration="340000" />
+      <workItem from="1747444232021" duration="73000" />
+      <workItem from="1747525841060" duration="18000" />
+      <workItem from="1748389794815" duration="805000" />
+      <workItem from="1748390606890" duration="751000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

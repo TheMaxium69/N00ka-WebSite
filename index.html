@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>N00ka Studio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #EDE7E0; /* Carton très clair, moins jaune */
+      color: #5C5048; /* Brun foncé neutre pour le texte principal */
+      font-size: 1rem;
+      overflow-x: hidden;
+    }
+    .paper-bg {
+      background-color: #EDE7E0;
+    }
+
+    .paper-card {
+      background-color: #D8C8B8; /* Carton clair-moyen, moins jaune */
+      border: 1px dashed #887868; /* Bordure brun neutre moyen */
+      box-shadow: 5px 5px 0px #887868; /* Ombre brun neutre moyen */
+      border-radius: 8px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .paper-card:hover {
+      transform: translate(2px, 2px);
+      box-shadow: 3px 3px 0px #786858; /* Ombre un peu plus foncée neutre au survol */
+    }
+
+    .section-title-base {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      color: #6A5040; /* Brun riche neutre pour les titres */
+      margin-bottom: 1rem;
+      text-align: center;
+      text-shadow: 1px 1px 0px #EDE7E0, 2px 2px 0px #A89888; /* Ombre texte avec couleurs carton neutre */
+    }
+    .section-subtitle-line {
+      width: 100px;
+      height: 4px;
+      background: repeating-linear-gradient(
+              45deg,
+              #C0B0A0, /* Carton moyen neutre */
+              #C0B0A0 8px,
+              #A89888 8px, /* Carton plus foncé neutre */
+              #A89888 16px
+      );
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0;
+      margin-bottom: 2rem;
+      border-radius: 2px;
+      box-shadow: 1px 1px 0px #887868; /* Ombre brun neutre moyen */
+    }
+
+    @media (min-width: 640px) {
+      .section-subtitle-line {
+        margin-bottom: 2.5rem;
+      }
+    }
+
+    .btn-primary {
+      font-family: 'Poppins', sans-serif;
+      background-color: #B8A898; /* Carton moyen neutre pour fond de bouton */
+      color: #4A4038; /* Texte brun très foncé neutre sur bouton */
+      padding: 0.60rem 1.2rem;
+      border-radius: 6px;
+      font-weight: 600;
+      border: 2px solid #6A5040; /* Bordure brun riche neutre */
+      box-shadow: 3px 3px 0px #6A5040; /* Ombre brun riche neutre */
+      transition: all 0.2s ease;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 0.90rem;
+    }
+    .btn-primary:hover {
+      background-color: #A89888; /* Carton plus foncé neutre au survol */
+      box-shadow: 1px 1px 0px #6A5040;
+      transform: translate(2px, 2px);
+    }
+    .btn-primary i {
+      transition: transform 0.3s ease;
+    }
+    .btn-primary:hover i {
+      transform: rotate(5deg) translateX(3px);
+    }
+
+    nav.paper-nav {
+      background-color: #D8C8B8; /* Carton clair-moyen neutre pour la navbar */
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+      border-bottom: 3px dashed #887868; /* Bordure brun neutre moyen */
+    }
+    nav.paper-nav img {
+      filter: drop-shadow(2px 2px 1px #887868);
+    }
+
+    header.paper-header {
+      background-color: #C0B0A0; /* Carton moyen neutre pour le header */
+      padding-top: 7rem;
+      padding-bottom: 4rem;
+      text-align: center;
+      border-bottom: 5px solid #EDE7E0; /* Bordure carton très clair neutre */
+      box-shadow: inset 0 -10px 10px -10px #00000020; /* Ombre interne plus subtile */
+    }
+    header.paper-header .header-icon {
+      border: 5px solid #D8C8B8; /* Bordure carton carte neutre */
+      box-shadow: 0 0 0 5px #887868, 8px 8px 5px #00000020; /* Ombres carton neutre */
+    }
+    header.paper-header .header-title-base {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      color: #5C4033; /* Brun foncé soutenu pour titre header */
+      text-shadow: 1px 1px 0px #D8C8B8;
+    }
+    header.paper-header .header-subtitle-base {
+      color: #6A5040; /* Brun riche neutre pour sous-titre header */
+      font-weight: 400;
+    }
+
+    .partner-img-container {
+      background-color: #EDE7E0; /* Fond carton très clair neutre pour les images partenaires */
+      padding: 0.5rem;
+      border: 2px dashed #887868; /* Bordure brun neutre moyen */
+      border-radius: 8px;
+      box-shadow: 3px 3px 0px #887868; /* Ombre brun neutre moyen */
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+    }
+    .partner-img-container:hover {
+      transform: rotate(2deg) scale(1.05);
+      box-shadow: 5px 5px 0px #786858; /* Ombre plus foncée neutre au survol */
+    }
+    .partner-img-container img {
+      mix-blend-mode: multiply;
+      filter: grayscale(30%) sepia(10%); /* Ajustement du filtre pour des tons bruns plus neutres */
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    footer.paper-footer {
+      background-color: #A89888; /* Carton plus foncé neutre pour le footer */
+      color: #EDE7E0; /* Texte carton très clair neutre */
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+      border-top: 5px solid #D8C8B8; /* Bordure carton carte neutre */
+      box-shadow: inset 0 10px 10px -10px #00000020;
+    }
+    footer.paper-footer a {
+      color: #EDE7E0;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    footer.paper-footer a:hover {
+      color: #FFFFFF;
+      text-decoration: underline;
+      text-decoration-color: #EDE7E0;
+    }
+    footer.paper-footer .social-icon i {
+      transition: transform 0.3s ease;
+    }
+    footer.paper-footer .social-icon:hover i {
+      transform: scale(1.2) rotate(5deg);
+    }
+
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #EDE7E0; /* Fond scrollbar carton très clair neutre */
+      border-left: 1px dashed #887868; /* Bordure brun neutre moyen */
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #887868; /* Curseur brun neutre moyen */
+      border-radius: 3px;
+      border: 1px solid #6A5040; /* Bordure brun riche neutre */
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #786858; /* Curseur plus foncé neutre au survol */
+    }
+
+    .section-styled-bg {
+      background-color: #D0C0B0; /* Carton clair/moyen neutre pour fonds de section alternés */
+      border-radius: 15px;
+      border: 2px dashed #887868; /* Bordure brun neutre moyen */
+      box-shadow: inset 0 0 15px rgba(0,0,0,0.05);
+    }
+    .project-title {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      color: #6A5040;
+    }
+    .partner-name {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      color: #6A5040;
+    }
+    .footer-title {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      color: #EDE7E0;
+    }
+  </style>
+</head>
+<body class="antialiased paper-bg">
+
+<nav class="paper-nav fixed w-full z-50">
+  <div class="container mx-auto px-4 sm:px-6 py-3 flex justify-center items-center">
+    <a href="#">
+      <img src="assets/logo.png" alt="N00ka Logo" class="h-10 sm:h-12" onerror="this.src='https://placehold.co/140x45/cccccc/333333?text=Logo';">
+    </a>
+  </div>
+</nav>
+
+<header class="paper-header">
+  <div class="container mx-auto px-4 sm:px-6">
+    <img src="assets/nooka%20logo.png" alt="N00ka Icon" class="header-icon mx-auto mb-6 rounded-full h-32 w-32 sm:h-36 sm:w-36 md:h-40 md:w-40 object-cover" onerror="this.src='https://placehold.co/150x150/cccccc/333333?text=Icone';">
+    <h1 class="header-title-base mb-3 text-3xl sm:text-4xl md:text-5xl">Bienvenue chez N00ka Studio!</h1>
+    <p class="header-subtitle-base text-md sm:text-lg md:text-xl">L'univers où stratégie, fun et créativité se rencontrent !</p>
+  </div>
+</header>
+
+<main class="container mx-auto px-4 sm:px-6 py-8 sm:py-12">
+
+  <section id="about" class="py-10 md:py-16">
+    <h2 class="section-title-base text-3xl sm:text-4xl">🍻 C'est quoi N00ka ?</h2>
+    <div class="section-subtitle-line"></div>
+    <div class="max-w-3xl mx-auto paper-card p-6 sm:p-8">
+      <p class="text-sm sm:text-base md:text-lg leading-relaxed text-center"> Entrez dans un univers unique où stratégie, fun et créativité se rencontrent ! C'est un jeu de cartes à jouer et à collectionner, où chaque partie est différente et chaque deck reflète votre style. Créez vos propres cartes, intégrez-les aux boosters de la saison et devenez acteur de l’univers ! Que vous soyez duelliste, en équipe, ou en mode chaos, le jeu s’adapte à toutes les envies ! Préparez-vous à rire, rager et réagir dans un monde truffé de mèmes, de références cultes et de clins d’œil pop-culture. Tout est ici. Un univers qui n’attend que vous.
+      </p>
+    </div>
+  </section>
+
+  <section id="owner" class="my-10 md:my-12 py-10 md:py-16 section-styled-bg">
+    <div class="container mx-auto px-4 sm:px-6">
+      <h2 class="section-title-base text-3xl sm:text-4xl">🍻 Qui sommes-nous ?</h2>
+      <div class="section-subtitle-line"></div>
+      <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+        <div class="md:w-1/3 text-center">
+          <img src="assets/Maewan_Marthelot.jpg" alt="Les créateurs de N00ka" class="paper-card p-1.5 sm:p-2 rounded-lg shadow-lg mx-auto w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 object-cover" onerror="this.src='https://placehold.co/240x240/cccccc/333333?text=Image';">
+        </div>
+        <div class="md:w-2/3">
+          <div class="paper-card p-6 sm:p-8">
+            <p class="text-sm sm:text-base md:text-lg leading-relaxed"> Derrière ce jeu, deux passionnés : <strong class="font-semibold">Marthelot Maëwan</strong> et <strong class="font-semibold">Jonathan Cornuel</strong>.
+              Animés par l’envie de rassembler les univers, les références, les délires et la culture geek/pop, ils ont imaginé un jeu où chacun peut exprimer sa vision, son humour et sa créativité. Leur objectif ? Créer bien plus qu’un simple jeu de cartes : une marque, un monde vivant et évolutif, où la communauté a toute sa place. Un espace où tout le monde peut contribuer, s’amuser et se reconnaître.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="project" class="py-10 md:py-16">
+    <h2 class="section-title-base text-3xl sm:text-4xl">🍻 Nos projets ?</h2>
+    <div class="section-subtitle-line"></div>
+    <div class="grid md:grid-cols-1 gap-8 max-w-2xl mx-auto">
+      <article class="paper-card p-6 flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
+        <div class="sm:w-2/3 text-center sm:text-left">
+          <h3 class="project-title text-xl sm:text-2xl mb-2">Saint Balais</h3>
+          <p class="text-gray-700 mb-4 text-xs sm:text-sm md:text-base">Projet de jeux de cartes à collectionner et à jouer.</p>
+          <a href="https://leshopsaintbalais.com/" target="_blank" class="btn-primary">
+            Visiter la Boutique <i class="fas fa-cut ml-1 sm:ml-2"></i> </a>
+        </div>
+        <div class="sm:w-1/3 mt-4 sm:mt-0 w-full max-w-xs sm:max-w-none mx-auto">
+          <img src="assets/project/sb2.jpg" alt="Projet Saint Balais" class="rounded-lg shadow-md object-cover w-full h-40 sm:h-48 border-4 border-white" style="transform: rotate(-3deg);" onerror="this.src='https://placehold.co/300x225/cccccc/333333?text=Image';">
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="partenaire" class="my-10 md:my-12 py-10 md:py-16 section-styled-bg">
+    <div class="container mx-auto px-4 sm:px-6">
+      <h2 class="section-title-base text-3xl sm:text-4xl">🍻 Nos partenaires ?</h2>
+      <div class="section-subtitle-line"></div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 justify-items-center">
+        <a href="https://tyrolium.fr/" target="_blank" class="block text-center group w-full">
+          <div class="partner-img-container">
+            <img src="assets/part/Tyrolium.jpg" alt="Partenaire Tyrolium" onerror="this.src='https://placehold.co/120x120/cccccc/333333?text=Logo';">
+          </div>
+          <p class="partner-name mt-2 text-xs sm:text-sm group-hover:text-amber-800">Tyrolium</p>
+        </a>
+        <a href="https://www.linkedin.com/company/graphic-n00k/" target="_blank" class="block text-center group w-full">
+          <div class="partner-img-container">
+            <img src="assets/part/graph.png" alt="Partenaire Graphic N00k" onerror="this.src='https://placehold.co/120x120/cccccc/333333?text=Logo';">
+          </div>
+          <p class="partner-name mt-2 text-xs sm:text-sm group-hover:text-amber-800">Graphic N00k</p>
+        </a>
+        <a href="https://linktr.ee/hystenchurch" target="_blank" class="block text-center group w-full">
+          <div class="partner-img-container">
+            <img src="assets/part/label.png" alt="Partenaire Hysten Church" onerror="this.src='https://placehold.co/120x120/cccccc/333333?text=Logo';">
+          </div>
+          <p class="partner-name mt-2 text-xs sm:text-sm group-hover:text-amber-800">Hysten Church</p>
+        </a>
+        <a href="https://www.3idfx.fr/" target="_blank" class="block text-center group w-full">
+          <div class="partner-img-container">
+            <img src="assets/part/1.png" alt="Partenaire 3ID FX" onerror="this.src='https://placehold.co/120x120/cccccc/333333?text=Logo';">
+          </div>
+          <p class="partner-name mt-2 text-xs sm:text-sm group-hover:text-amber-800">3ID FX</p>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="paper-footer">
+  <div class="container mx-auto px-4 sm:px-6">
+    <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+      <div class="mb-6 md:mb-0">
+        <p class="footer-title text-lg sm:text-xl">N00ka Studio</p>
+        <p class="text-xs sm:text-sm font-medium">&copy; 2025 Tous droits réservés.</p>
+        <p class="mt-1 sm:mt-2 text-xs">Site créé par <a href="https://tyrolium.fr" target="_blank">Tyrolium</a></p>
+      </div>
+
+      <div class="flex flex-col items-center sm:flex-row sm:justify-center sm:items-baseline space-y-2 sm:space-y-0 sm:space-x-4 md:space-x-6 mb-6 md:mb-0 text-sm">
+        <a href="index.html">Accueil</a>
+        <a href="contact.html">Contact</a>
+        <a href="terms.html">Mentions Légales</a>
+      </div>
+
+      <div class="flex space-x-3 sm:space-x-4">
+        <a href="https://www.instagram.com/n00ka_studio/" target="_blank" class="social-icon">
+          <i class="fab fa-instagram fa-lg sm:fa-xl"></i> </a>
+        <a href="https://www.tiktok.com/@n00ka7" target="_blank" class="social-icon">
+          <i class="fab fa-tiktok fa-lg sm:fa-xl"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/n00ka/" target="_blank" class="social-icon">
+          <i class="fab fa-linkedin fa-lg sm:fa-xl"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Script pour le défilement fluide (smooth scroll)
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href');
+      if (targetId.length > 1) {
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          const navbarHeight = document.querySelector('nav.paper-nav') ? document.querySelector('nav.paper-nav').offsetHeight : 0;
+          const elementPosition = targetElement.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      }
+    });
+  });
+
+  // Script pour la barre de navigation
+  const nav = document.querySelector('nav.paper-nav');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      nav.style.borderBottomWidth = '2px';
+      nav.style.boxShadow = '0 2px 3px -1px rgba(0,0,0,0.05), 0 1px 2px -1px rgba(0,0,0,0.03)';
+    } else {
+      nav.style.borderBottomWidth = '3px';
+      nav.style.boxShadow = '0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06)';
+    }
+  });
+</script>
+
+</body>
+</html>

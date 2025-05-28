@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentions Légales - N00ka Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #EDE7E0; /* Carton très clair */
+            color: #5C5048; /* Brun foncé neutre */
+            font-size: 1rem;
+            overflow-x: hidden;
+        }
+        .paper-bg {
+            background-color: #EDE7E0;
+        }
+
+        .paper-card {
+            background-color: #D8C8B8; /* Carton clair-moyen */
+            border: 1px dashed #887868; /* Bordure brun neutre moyen */
+            box-shadow: 5px 5px 0px #887868; /* Ombre brun neutre moyen */
+            border-radius: 8px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .paper-card:hover {
+            transform: translate(2px, 2px);
+            box-shadow: 3px 3px 0px #786858;
+        }
+
+        .section-title-base {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            color: #6A5040; /* Brun riche neutre */
+            margin-bottom: 1rem;
+            text-align: center;
+            text-shadow: 1px 1px 0px #EDE7E0, 2px 2px 0px #A89888;
+        }
+
+        .legal-section-title { /* Titre pour les sections des mentions légales */
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            color: #6A5040;
+            font-size: 1.5rem; /* text-2xl */
+            margin-bottom: 0.75rem; /* mb-3 */
+            padding-bottom: 0.5rem; /* pb-2 */
+            border-bottom: 2px dashed #A89888;
+        }
+        .legal-text p {
+            margin-bottom: 1rem; /* mb-4 */
+            line-height: 1.6; /* leading-relaxed */
+            font-size: 0.95rem; /* text-sm or base */
+        }
+        .legal-text ul {
+            list-style-type: disc;
+            margin-left: 1.5rem; /* ml-6 */
+            margin-bottom: 1rem;
+        }
+        .legal-text li {
+            margin-bottom: 0.5rem; /* mb-2 */
+        }
+
+
+        nav.paper-nav {
+            background-color: #D8C8B8;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+            border-bottom: 3px dashed #887868;
+        }
+        nav.paper-nav img {
+            filter: drop-shadow(2px 2px 1px #887868);
+        }
+
+        footer.paper-footer {
+            background-color: #A89888;
+            color: #EDE7E0;
+            padding-top: 2.5rem;
+            padding-bottom: 2.5rem;
+            border-top: 5px solid #D8C8B8;
+            box-shadow: inset 0 10px 10px -10px #00000020;
+        }
+        footer.paper-footer a {
+            color: #EDE7E0;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        footer.paper-footer a:hover {
+            color: #FFFFFF;
+            text-decoration: underline;
+            text-decoration-color: #EDE7E0;
+        }
+        footer.paper-footer .social-icon i {
+            transition: transform 0.3s ease;
+        }
+        footer.paper-footer .social-icon:hover i {
+            transform: scale(1.2) rotate(5deg);
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #EDE7E0;
+            border-left: 1px dashed #887868;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #887868;
+            border-radius: 3px;
+            border: 1px solid #6A5040;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #786858;
+        }
+        .footer-title {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            color: #EDE7E0;
+        }
+    </style>
+</head>
+<body class="antialiased paper-bg">
+
+<nav class="paper-nav fixed w-full z-50">
+    <div class="container mx-auto px-4 sm:px-6 py-3 flex justify-center items-center">
+        <a href="index.html"> <img src="assets/logo.png" alt="N00ka Logo" class="h-10 sm:h-12" onerror="this.src='https://placehold.co/140x45/cccccc/333333?text=Logo';">
+        </a>
+    </div>
+</nav>
+
+<header class="bg-C0B0A0 pt-32 pb-16 text-center">
+    <div class="container mx-auto px-4 sm:px-6">
+        <h1 class="section-title-base text-4xl sm:text-5xl md:text-6xl">Mentions Légales</h1>
+        <p class="text-md sm:text-lg md:text-xl text-6A5040 mt-2">Informations légales concernant N00ka Studio.</p>
+    </div>
+</header>
+
+<main class="container mx-auto px-4 sm:px-6 py-8 sm:py-12">
+
+    <section id="legal-content" class="py-10 md:py-12">
+        <div class="max-w-4xl mx-auto paper-card p-6 sm:p-8 md:p-10 legal-text">
+
+            <div class="mb-8">
+                <h2 class="legal-section-title">1. Éditeur du Site</h2>
+                <p>
+                    <strong>Nom de l'entreprise :</strong> N00ka Studio (ou votre raison sociale) <br>
+                    <strong>Forme juridique :</strong> (Ex: SAS, SARL, Auto-entrepreneur) <br>
+                    <strong>Adresse du siège social :</strong> [Votre Adresse Complète] <br>
+                    <strong>Numéro de téléphone :</strong> [Votre Numéro de Téléphone] <br>
+                    <strong>Adresse e-mail :</strong> [Votre Adresse E-mail de Contact] <br>
+                    <strong>Capital social :</strong> (Si applicable) [Montant] € <br>
+                    <strong>Numéro SIREN/SIRET :</strong> [Votre Numéro SIREN/SIRET] <br>
+                    <strong>Numéro RCS :</strong> (Si applicable) [Votre Numéro RCS] <br>
+                    <strong>Numéro de TVA intracommunautaire :</strong> (Si applicable) [Votre Numéro de TVA] <br>
+                    <strong>Directeur de la publication :</strong> [Nom du Directeur de la Publication]
+                </p>
+            </div>
+
+            <div class="mb-8">
+                <h2 class="legal-section-title">2. Hébergement du Site</h2>
+                <p>
+                    <strong>Nom de l'hébergeur :</strong> [Nom de Votre Hébergeur] <br>
+                    <strong>Adresse de l'hébergeur :</strong> [Adresse Complète de l'Hébergeur] <br>
+                    <strong>Numéro de téléphone de l'hébergeur :</strong> [Téléphone de l'Hébergeur]
+                </p>
+            </div>
+
+            <div class="mb-8">
+                <h2 class="legal-section-title">3. Propriété Intellectuelle</h2>
+                <p>
+                    L'ensemble de ce site relève de la législation française et internationale sur le droit d'auteur et la propriété intellectuelle. Tous les droits de reproduction sont réservés, y compris pour les documents téléchargeables et les représentations iconographiques et photographiques.
+                </p>
+                <p>
+                    La reproduction de tout ou partie de ce site sur un support électronique quel qu'il soit est formellement interdite sauf autorisation expresse du directeur de la publication. Les marques citées sur ce site sont déposées par les sociétés qui en sont propriétaires.
+                </p>
+            </div>
+
+            <div class="mb-8">
+                <h2 class="legal-section-title">4. Responsabilité</h2>
+                <p>
+                    N00ka Studio s'efforce d'assurer au mieux de ses possibilités, l'exactitude et la mise à jour des informations diffusées sur ce site, dont elle se réserve le droit de corriger, à tout moment et sans préavis, le contenu. Toutefois, N00ka Studio ne peut garantir l'exactitude, la précision ou l'exhaustivité des informations mises à la disposition sur ce site.
+                </p>
+                <p>
+                    En conséquence, N00ka Studio décline toute responsabilité pour toute interruption du site, problèmes techniques, pour toute inexactitude ou omission sur des informations disponibles sur le site, pour tous dommages résultant d'une intrusion frauduleuse d'un tiers ayant entraîné une modification des informations mises à la disposition sur le site.
+                </p>
+            </div>
+
+            <div class="mb-8">
+                <h2 class="legal-section-title">5. Données Personnelles</h2>
+                <p>
+                    Les informations recueillies font l’objet d’un traitement informatique destiné à [Préciser la finalité : gestion de la relation client, envoi de newsletter, etc.]. Les destinataires des données sont : N00ka Studio.
+                </p>
+                <p>
+                    Conformément à la loi « informatique et libertés » du 6 janvier 1978 modifiée et au Règlement Général sur la Protection des Données (RGPD), vous bénéficiez d’un droit d’accès, de rectification, de suppression des informations qui vous concernent, que vous pouvez exercer en vous adressant à [Votre Adresse E-mail de contact pour le RGPD] ou par courrier à [Votre Adresse Postale].
+                </p>
+                <p>Vous pouvez également, pour des motifs légitimes, vous opposer au traitement des données vous concernant.</p>
+            </div>
+
+            <div class="mb-8">
+                <h2 class="legal-section-title">6. Cookies</h2>
+                <p>
+                    Le site https://votresite.ca/ peut-être amené à vous demander l’acceptation des cookies pour des besoins de statistiques et d'affichage. Un cookie est une information déposée sur votre disque dur par le serveur du site que vous visitez. Il contient plusieurs données qui sont stockées sur votre ordinateur dans un simple fichier texte auquel un serveur accède pour lire et enregistrer des informations.
+                </p>
+                <p>
+                    [Expliquez brièvement les types de cookies utilisés et leur finalité. Mentionnez comment l'utilisateur peut les gérer/désactiver via son navigateur.]
+                </p>
+            </div>
+
+            <div class="mb-8">
+                <h2 class="legal-section-title">7. Droit Applicable et Attribution de Juridiction</h2>
+                <p>
+                    Tout litige en relation avec l’utilisation du site https://votresite.ca/ est soumis au droit français. Il est fait attribution exclusive de juridiction aux tribunaux compétents de [Ville du Tribunal Compétent].
+                </p>
+            </div>
+
+            <p class="text-xs text-center mt-10">Dernière mise à jour : [Date de la dernière mise à jour]</p>
+
+        </div>
+    </section>
+
+</main>
+
+<footer class="paper-footer">
+    <div class="container mx-auto px-4 sm:px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            <div class="mb-6 md:mb-0">
+                <p class="footer-title text-lg sm:text-xl">N00ka Studio</p>
+                <p class="text-xs sm:text-sm font-medium">&copy; 2025 Tous droits réservés.</p>
+                <p class="mt-1 sm:mt-2 text-xs">Site créé par <a href="https://tyrolium.fr" target="_blank">Tyrolium</a></p>
+            </div>
+
+            <div class="flex flex-col items-center sm:flex-row sm:justify-center sm:items-baseline space-y-2 sm:space-y-0 sm:space-x-4 md:space-x-6 mb-6 md:mb-0 text-sm">
+                <a href="index.html">Accueil</a>
+                <a href="contact.html">Contact</a>
+                <a href="terms.html">Mentions Légales</a>
+            </div>
+
+            <div class="flex space-x-3 sm:space-x-4">
+                <a href="https://www.instagram.com/n00ka_studio/" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram fa-lg sm:fa-xl"></i> </a>
+                <a href="https://www.tiktok.com/@n00ka7" target="_blank" class="social-icon">
+                    <i class="fab fa-tiktok fa-lg sm:fa-xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/n00ka/" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin fa-lg sm:fa-xl"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    const nav = document.querySelector('nav.paper-nav');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            nav.style.borderBottomWidth = '2px';
+            nav.style.boxShadow = '0 2px 3px -1px rgba(0,0,0,0.05), 0 1px 2px -1px rgba(0,0,0,0.03)';
+        } else {
+            nav.style.borderBottomWidth = '3px';
+            nav.style.boxShadow = '0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06)';
+        }
+    });
+</script>
+
+</body>
+</html>
